@@ -1,5 +1,9 @@
 # the-missing-frontend
 
+![fun.gif](fun.gif)
+
+技术就像这图一样，捅破窗棂纸,将乾坤看个通通透透吧
+
 ## 基础
 
 - 了解MEAN
