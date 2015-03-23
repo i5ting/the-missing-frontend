@@ -10,6 +10,7 @@
 
 ## 基础
 
+- [了解http-server](docs/httpserver.md)
 - 了解MEAN
 - 了解phonegap/cordova简史
 - 移动端特点
