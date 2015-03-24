@@ -14,7 +14,7 @@
 - 了解MEAN
 - 了解phonegap/cordova简史
 - 移动端特点
-- 如何展望未来的前端
+- [如何展望未来的前端](tomorrow.md)
   - js一统天下（nodejs做后端，传统web和h5使用javasctipt，更智能的工具如gulp，更简单的写法如coffeescript等）
   - h5大行其道（网速变快，硬件内存增长）
 
@@ -134,6 +134,7 @@ http://runjs.cn/
 - hexo搭建个人博客
 - Font Awesome
 - Metro UI
+- [restfull api](docs/restfull_api.md)
 
 ## 八卦
 
