@@ -98,7 +98,7 @@ framework
 
 libary
 
-- [zeptojs](http://zeptojs.com/)
+- [zeptojs](docs/zeptojs.md)
   - 兼容jquery api
   - 支持tap等手势
 - [iscroll](http://cubiq.org/iscroll-5)
@@ -142,3 +142,7 @@ http://runjs.cn/
 - node 模块可以在前端使用么？browserify
 - 如何看待tdd与debug？
 - 是否需要使用IDE？
+
+## FAQ
+
+[faq](docs/faq.md)
