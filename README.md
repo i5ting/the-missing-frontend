@@ -104,6 +104,7 @@ libary
 - [iscroll](http://cubiq.org/iscroll-5)
 - [fastclick](https://github.com/ftlabs/fastclick)
 - [hammer手势](https://github.com/hammerjs/hammer.js)
+- [swiper](swiper.com.cn)
 
 ## 线上部署
 
