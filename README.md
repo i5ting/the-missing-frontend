@@ -106,6 +106,15 @@ libary
 - [hammer手势](https://github.com/hammerjs/hammer.js)
 - [swiper](swiper.com.cn)
 
+
+## Test
+
+- CasperJS is a navigation scripting & testing utility for PhantomJS and SlimerJS written in Javascript
+- tdd/bdd
+- http://nodeonly.com/2014/11/24/mongoose-test.html
+- mocha
+- qunit
+
 ## 线上部署
 
 
@@ -136,7 +145,7 @@ http://runjs.cn/
 - Font Awesome
 - Metro UI
 - [restfull api](docs/restfull_api.md)
-
+- https://www.npmjs.com/package/v8-profiler
 ## 八卦
 
 - iojs和nodejs的关系

@@ -36,3 +36,19 @@ Meteor 也不大
 
 以上足够了
 
+
+
+## ng里怎么让你想起java了?
+
+mvc模式最早是smalltalk里的，java里最初是swing里用得，不想没有成功，结果在web开发上火了。从ejb到servlet演进，2004年Martin Fowler总结了ioc相关经验，Rod Johnson(Spring框架的作者)写了《Expert One-on-One J2EE Development without EJB》。。。。。
+
+所以你看ng得时候
+
+- mvc
+- ioc
+- 指令（类似jsp里的taglib）
+- 双向绑定（struts等框架里都有）
+
+那么，熟悉java的亲们，看到ng会想到什么呢？
+
+
