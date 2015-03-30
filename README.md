@@ -155,6 +155,7 @@ http://runjs.cn/
 - node 模块可以在前端使用么？browserify
 - 如何看待tdd与debug？
 - 是否需要使用IDE？
+- [国内上谷歌方法总结](howtogoogle.md)
 
 ## FAQ
 
