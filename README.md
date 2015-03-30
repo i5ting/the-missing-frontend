@@ -27,6 +27,7 @@ js
   - 插件写法方法 http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html
   - 事件（live使用场景，历史，以及on）
   - $.ajax 家谱
+  - 如何自己去写一个ajax库 https://github.com/nodeonly/minAjax.js
 - Backbone
   - extend
   - 事件
