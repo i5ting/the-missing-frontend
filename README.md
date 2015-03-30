@@ -147,6 +147,7 @@ http://runjs.cn/
 - Metro UI
 - [restfull api](docs/restfull_api.md)
 - https://www.npmjs.com/package/v8-profiler
+- [发布 / 订阅模式,mq,ws](docs/pubsub.md)
 ## 八卦
 
 - iojs和nodejs的关系
