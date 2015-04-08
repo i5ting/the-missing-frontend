@@ -62,3 +62,15 @@ mvc模式最早是smalltalk里的，java里最初是swing里用得，不想没�
 亲，它有官网好么？哈哈
 
 少抱怨，多思考，未来更美好
+
+
+## 部署nodejs一般用什么工具。？
+
+pm2:http://www.douban.com/note/314200231/
+
+
+## mongoose的翻译
+
+mongoose的翻译是猫鼬。。。
+
+![](https://dn-cnode.qbox.me/Fr4o_k4R6435GWNxToeentuGNFAp)
