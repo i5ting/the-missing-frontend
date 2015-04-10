@@ -17,7 +17,7 @@
 - [如何展望未来的前端](tomorrow.md)
   - js一统天下（nodejs做后端，传统web和h5使用javasctipt，更智能的工具如gulp，更简单的写法如coffeescript等）
   - h5大行其道（网速变快，硬件内存增长）
-
+- [反思一下自己](docs/me.md)
 ## 前端
 
 js

@@ -74,3 +74,22 @@ pm2:http://www.douban.com/note/314200231/
 mongoose的翻译是猫鼬。。。
 
 ![](https://dn-cnode.qbox.me/Fr4o_k4R6435GWNxToeentuGNFAp)
+
+
+##  npm不是全局安装的么,怎么放在版本控制里?
+
+```
+npm install -g
+```
+
+才是全局的，而
+
+```
+npm install --save
+```
+这是本地装的，你可以在当前目录看到node_modules目录
+
+用git做版本控制的时候`npm init` 和`express .`会产生`.gitignore`文件，此文件了默认忽略了node_modules目录，所以你提交的时候是没有node_modules的。
+
+从积极的角度看，是需要忽略的，尽可能和最新的模块保持一致，俗话见追涨不追跌
+
