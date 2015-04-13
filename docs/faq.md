@@ -149,3 +149,22 @@ express提供json接口即可，然后ios/android通过自己的http库请求该
 - jquery mobile（基于jquery 插件简单，缺点定制ui非常麻烦，通过dom属性做绑定，用着恶心）
 - ionicframework（基于angular+phonegap的一站式开发框架，足够高大上，学习曲线较高，以后会有可视化界面的）
 
+
+## node怎么获取远程服务器的时间？
+
+```
+要做个功能要求时间不能使用本地时间而是使用某个服务期器上的时间，有什么好的办法么
+```
+
+答曰：
+
+    ssh user@ip.com date
+    
+上面给的是玩的，哈哈
+
+正解
+
+2台服务器，使用ntp同步时间即可
+
+- http://baike.baidu.com/link?url=wiaKOt6Q1lL2ACI-ywiqd9pd6lCl8sFYBDNoFeptZHL3oDEauhEGSfyREGfuGA4JpgeQJtIDkHT4DmJbjj7m2q
+- http://blog.chinaunix.net/uid-26454764-id-3230936.html?bsh_bid=210650063
