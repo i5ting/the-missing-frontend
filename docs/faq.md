@@ -93,3 +93,59 @@ npm install --save
 
 从积极的角度看，是需要忽略的，尽可能和最新的模块保持一致，俗话见追涨不追跌
 
+
+
+## 如何开发移动应用？
+
+
+```
+最近打算和同学合作开发移动应用，现在的计划是同学用H5开发并打包应用，我用node.js搭建后台。需求大概是这样子：
+
+* 服务器主要实现数据交换和信息实时推送，其他逻辑由应用端实现
+* 用户的注册和登录
+* 虽然node.js和mongodb是绝配，但最好能支持mysql
+
+我本是做嵌入式方向的，web方向上只用node.js+express搭过简单的网站，所以对C/S的一些概念和开发模式并不熟悉。
+
+我们打算边学边做，最好后期能够小范围上线，所以我们希望从一开始就按照标准、成熟的方案来开发。
+
+那么，希望各位推荐一些node.js后台开发的方案和框架，并且提醒一下零经验开发过程中会忽视或者考虑不到的一些问题。
+```
+
+
+答曰：
+
+1、区分是否是原生应用还是hybrid？
+
+1.1、原生应用开发
+
+express提供json接口即可，然后ios/android通过自己的http库请求该接口
+
+1.2、hybrid应用
+
+区分
+
+- html页面是服务器上
+- html页面打包在应用内部，如phonegap的www目录
+
+上面的2种都可以像1.1一样使用json接口，让ui和数据分离，一般如果不是图快得话，都是采用这样的方式
+
+如果第一种，html页面是服务器上，可以使用express + ejs，jade这样模块，可以快速高效的编写h5页面
+
+
+技术栈推荐
+
+方案1
+
+- bower http://bower.io/ 
+- ratchet http://goratchet.com/
+- zepto http://zeptojs.com
+- fastclick https://github.com/ftlabs/fastclick
+- iscroll http://iscrolljs.com
+- swiper http://www.swiper.com.cn/
+
+方案2
+
+- jquery mobile（基于jquery 插件简单，缺点定制ui非常麻烦，通过dom属性做绑定，用着恶心）
+- ionicframework（基于angular+phonegap的一站式开发框架，足够高大上，学习曲线较高，以后会有可视化界面的）
+
