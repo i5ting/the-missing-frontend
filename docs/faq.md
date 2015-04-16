@@ -166,5 +166,41 @@ express提供json接口即可，然后ios/android通过自己的http库请求该
 
 2台服务器，使用ntp同步时间即可
 
-- http://baike.baidu.com/link?url=wiaKOt6Q1lL2ACI-ywiqd9pd6lCl8sFYBDNoFeptZHL3oDEauhEGSfyREGfuGA4JpgeQJtIDkHT4DmJbjj7m2q
+- http://baike.baidu.com/view/60648.htm
 - http://blog.chinaunix.net/uid-26454764-id-3230936.html?bsh_bid=210650063
+
+
+## 升级node版本
+
+首先查看一下本机global模块的依赖是否有问题
+
+```
+npm list -g
+```
+
+
+比如报错如下
+
+```
+npm ERR! invalid: readable-stream@1.0.33-1 /usr/local/lib/node_modules/phantomjs/node_modules/request/node_modules/bl/node_modules/readable-stream
+npm ERR! invalid: browser-launcher@1.0.0 /usr/local/lib/node_modules/testling/node_modules/browser-launcher
+npm ERR! extraneous: editor@0.0.6 /usr/local/lib/node_modules/testling/node_modules/browser-launcher/node_modules/editor
+
+```
+
+此时
+
+
+```
+[sudo] npm list -g phantomjs （需要翻墙）
+[sudo] npm list -g browser-launcher
+[sudo] npm list -g editor
+[sudo] npm list -g testling
+```
+
+再测试一下
+
+```
+npm list -g
+```
+

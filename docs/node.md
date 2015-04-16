@@ -15,3 +15,8 @@ https://github.com/felixge/faster-than-c
 
 
 答曰：setTimeout, 可以考虑结合 async.forever 使用
+
+
+## why-i-am-switching-to-promises
+
+http://spion.github.io/posts/why-i-am-switching-to-promises.html
