@@ -204,3 +204,13 @@ npm ERR! extraneous: editor@0.0.6 /usr/local/lib/node_modules/testling/node_modu
 npm list -g
 ```
 
+
+
+## 关于 Node.js 项目源码加密
+
+```
+最近公司用 Node.js 开发来一款程序, 需要部署在客户的服务器上, 为了防止竞争对手拷贝走源码, 需要对 js 程序进行加密操作.
+求各位兄弟给个思路,或者现成的工具.
+```
+
+核心逻辑用crypto比较好，大部分还是uglify或者[google的超级变态货closure](https://github.com/google/closure-compiler)
