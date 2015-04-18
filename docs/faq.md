@@ -214,3 +214,34 @@ npm list -g
 ```
 
 核心逻辑用crypto比较好，大部分还是uglify或者[google的超级变态货closure](https://github.com/google/closure-compiler)
+
+
+## 可能捕获不到的错误如何处理
+
+对于一些可能捕获不到的错误，可以用
+
+```
+process.on('uncaughtException', function(err) {
+    //log it
+});
+```
+
+来保证node不退出，最好用log4js日志这些未捕获的错误。这是最后一道防线，因为错误是未知的，所以可能造成某个服务不可能用，所以需要谨慎使用
+
+
+
+## 最近使用node操作mysql的感受
+
+```
+最近工作中要用到node操作mysql，没有使用orm。
+因为受java影响，原本一开始准备写一个dao层，写了一段时间之后发现表连接的情况出现得太多，用dao并不能很方便的组织数据。
+于是又改为直接写sql查询数据，然后根据接口封装数据，这其中又使用到async的一些操作集合的接口。
+整体下来就有这样的感觉，写出来的代码结构性很差，不易读，代码无法复用。
+不知道各位怎么看待这个问题？
+```
+
+合适的东西做合适的活
+
+- 操作mongodb还是用node
+- 操作mysql还是用ruby的 active record
+
