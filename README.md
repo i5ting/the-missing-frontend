@@ -106,6 +106,7 @@ libary
 - [fastclick](https://github.com/ftlabs/fastclick)
 - [hammer手势](https://github.com/hammerjs/hammer.js)
 - [swiper](swiper.com.cn)
+- [layer弹出框](http://sentsin.com/layui/layer/)
 
 practice
 
