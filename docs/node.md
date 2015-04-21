@@ -20,3 +20,27 @@ https://github.com/felixge/faster-than-c
 ## why-i-am-switching-to-promises
 
 http://spion.github.io/posts/why-i-am-switching-to-promises.html
+
+
+## 使用config来管理配置文件
+
+```
+var API = require('wechat-api');
+var config = require('config');
+
+var menu_config = config.get('wx.wx_menu');
+var app_id      = config.get('wx.app_id');
+var app_secret  = config.get('wx.app_secret');
+
+var api = new API(app_id, app_secret);
+
+//测试
+function app(){
+  api.createMenu(menu_config, function(err, result){
+    console.log(result);
+  });
+}
+
+module.exports = app;
+```
+
