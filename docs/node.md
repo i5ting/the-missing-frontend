@@ -24,6 +24,37 @@ http://spion.github.io/posts/why-i-am-switching-to-promises.html
 
 ## 使用config来管理配置文件
 
+https://github.com/lorenwest/node-config
+
+下面是一个比较简单的weixin公众号api配置的实例
+
+执行命令：
+
+```
+npm install --save config
+touch config/default.json
+```
+配置config/default.json内容
+
+```
+  "wx": {
+    "app_id": "wx04014b02a0",
+    "app_secret": "cc4c224b5018370cf6ffc95",
+    "wx_menu": {
+      "button": [
+        {
+          "name": "xxxxx",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "xxxxx",
+              "url": "http://www.xxxxx.com/"
+            },
+ 
+```
+
+实际调用代码
+
 ```
 var API = require('wechat-api');
 var config = require('config');
@@ -44,3 +75,28 @@ function app(){
 module.exports = app;
 ```
 
+上面是比较常见的，还有像数据库配置啊等等
+
+
+最佳实践应该是
+
+- 敏感信息放到环境变量里
+- 不敏感的配置信息放到config.json里
+
+更好的一点是config支持各种模式
+
+- production
+- developmeng
+- test 
+- staging
+
+比如production模式下，config目录下创建config/production.json就可以了，真是太方便了。
+
+注意json要格式化，最好的办法是
+
+```
+[sudo] npm install -g je
+je
+```
+
+把json放里面格式化去
