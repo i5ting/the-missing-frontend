@@ -245,3 +245,17 @@ process.on('uncaughtException', function(err) {
 - 操作mongodb还是用node
 - 操作mysql还是用ruby的 active record
 
+
+
+## nodejs里一旦修改了config.js 数据需要重新启动运行nodejs app吧？
+config.json 这种封装的方式，许改配置后也需要重新启动吗？
+
+```
+https://github.com/substack/live-patch
+
+介绍说patch the source code of a running program
+
+说通俗点，就是运行时，给已有代码打补丁，类似于java里的osgi概念
+
+此类通常对插件，热部署有用，所以node的热部署时代不会很远就会到来，欢呼吧
+```
