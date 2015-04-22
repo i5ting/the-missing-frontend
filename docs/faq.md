@@ -259,3 +259,8 @@ https://github.com/substack/live-patch
 
 此类通常对插件，热部署有用，所以node的热部署时代不会很远就会到来，欢呼吧
 ```
+
+
+## Generating Unique IDs in Node.js Using MongoDB
+
+http://www.tuicool.com/articles/U7Nbaia
