@@ -100,3 +100,12 @@ je
 ```
 
 把json放里面格式化去
+
+
+## mongodb聚合运算
+
+MongoDB的聚合框架原理如下图：使用$match类似SQL的where语句，查询所有文档字段status是"A"的文档，$group是将相同id为"A123"的元素合并，合并后的字段名是total，值是根据{ $sum: "$amount"  }来计算，{ $sum表示计算总和。
+    
+![](mongodbaggre.png)
+
+more http://www.jdon.com/repository/aggregate-data-from-mongodb.html
