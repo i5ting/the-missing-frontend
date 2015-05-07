@@ -109,3 +109,9 @@ MongoDB的聚合框架原理如下图：使用$match类似SQL的where语句，�
 ![](mongodbaggre.png)
 
 more http://www.jdon.com/repository/aggregate-data-from-mongodb.html
+
+## 单条upsert
+
+http://docs.mongodb.org/manual/reference/method/db.collection.update/#upsert-parameter
+
+如果没有就创建，如果有就更新
